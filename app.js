@@ -7,7 +7,7 @@ let APIKEY ="37358f0fedbec504231907229bd1956b";
 getweatherdata = (city) =>{
     const url =`https://api.openweathermap.org/data/2.5/weather`;
     
-    const fullurl = `${url}?q=${city}&appid=${APIKEY}&units=imperial`;
+    const fullurl = `${url}?q=${city}&appid=${APIKEY}&units=metric`;
     const weatherpromise = fetch(fullurl);
     console.log(city);
 
